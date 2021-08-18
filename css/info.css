@@ -1,3 +1,13 @@
+.banner{
+    /* border: 1px solid red; */
+    width: 1200px;
+    min-width: var(--page-width);
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+.banner img{
+    width: 800px;
+}
 .content{
     /* border: 1px solid red; */
     width: 1200px;
@@ -41,7 +51,7 @@
 }
 .navbar{
     /* border: 1px solid red; */
-    height: 800px;
+    height: 750px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -153,7 +163,7 @@
 }
 .title{
     font-size: 2.2rem;
-    color: hsla(203, 31%, 87%, .5);
+    color: hsla(203, 31%, 87%, .8);
 }
 .para3{
     font-size: 1.6rem;

@@ -57,11 +57,13 @@
     /* border: 1px solid blue; */
     margin: 0 auto;
     width: 1200px;
+    /* overflow: hidden; */
     min-width: var(--page-width);
 }
-.vd_blk{
+iframe{
     margin: 0 auto;
-    width: 1200px;
+    width: 100%;
+    /* height: 600px; */
 }
 
 

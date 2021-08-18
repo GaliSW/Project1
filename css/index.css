@@ -7,14 +7,14 @@
     position: relative;
     /* margin-top: 100px; */
     z-index: -1;
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
     min-width: var(--page-width);
 }
-.vd_blk{
+iframe{
     margin: 0 auto;
-    padding: 0;
+    /* padding: 0; */
     /* border: 1px solid yellow; */
-    width: 1150px;
+    width: 1200px;
 }
 .vd_para{
     position: absolute;
@@ -25,14 +25,15 @@
     flex-direction: column;
     /* text-align: center; */
     font-size: 1.6rem;
-    color:hsla(203, 31%, 87%, .7);
+    color:hsla(203, 31%, 87%, .9);
+    /* color: hsla(215, 57%, 24%, 0.83); */
 }
 .vd_para h1, .vd_para h2{
     text-align: center;
     margin: 0;
 }
 .vd_para p{
-    padding-left: 60px;
+    margin: 0 auto;
 }
 
 /* *scroll_icon */
@@ -104,66 +105,9 @@
     }
 }
 /* *carousel  */
-/* .banner{
-    margin: 0 auto;
-    overflow: hidden;
-}
-.banner , .banner_list>li ,.banner_list>li img{
-    width: 1050px;
-    height: 700px;
-}
-.banner_middle{
-    position: relative;
-    width: calc(105px * 6);
-    animation: carousel 20s cubic-bezier(.3,.27,0,.98) infinite;
-}
-.banner_list{
-    display: flex;
-    list-style: none;
-    border: 1px solid red;
-    padding: 0;
-}
-
-@keyframes carousel{
-    0%{
-        left: 0;     
-    }
-    10%{
-        
-        left: -1050px;
-    }
-    20%{
-        
-        left: -1050px;
-    }
-    30%{
-        
-        left: calc(1050px * -2);
-    }
-    40%{   
-        left: calc(1050px * -2);
-    }
-    50%{
-        left: calc(1050px * -3);
-    }
-    60%{
-        left: calc(1050px * -3);
-    }
-    70%{
-        left: calc(1050px * -4);
-    }
-    80%{
-        left: calc(1050px * -4);
-    }
-    90%{
-        left: calc(1050px * -5);
-    }
-    100%{
-        left: calc(1050px * -5);
-    }
-} */
 
 
+/** //////// */
 .swiperbox{
     position: relative;
     height: 700px;
@@ -183,20 +127,8 @@
     width: 1050px;
     height: 700px;
     margin: 0 auto;
-    /* min-width: var(--page-width); */
 }
-/* .swiper div:nth-of-type(1){
-    background-color: wheat;
-}
-.swiper div:nth-of-type(2){
-    background-color: blue;
-}
-.swiper div:nth-of-type(3){
-    background-color: red;
-}
-.swiper div:nth-of-type(4){
-    background-color: wheat;
-} */
+
 .arrow{
     position: absolute;
     width: 1050px;
@@ -395,9 +327,7 @@
     filter: blur(10px);
     background: linear-gradient(235deg, #457DB5, #010615,#457DB5);
 }
-/* .brand_box:nth-child(1)::before,.brand_box:nth-child(1)::after{
-    background:linear-gradient(235deg, #89ff00, #010615,#457DB5);
-} */
+
 .brand_box .glass{
     position: absolute;
     top: 0;
@@ -426,12 +356,10 @@
     color: #BFA459;
     border: 2px solid #BFA459;
     padding: 10px;
+    transition: all .3s;
 }
 .brand_content a:hover{
-    background-color: #1A3760;
-    /* color: #010615; */
-    /* transform: scale(1.1); */
+    background-color: #BFA459;
     border-radius: 5px;
-    transition: all .3s;
-    
+    color: #D3E0E8;
 }

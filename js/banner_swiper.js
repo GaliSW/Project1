@@ -64,16 +64,16 @@ function pre() {
         )
     }
 }
-$(".right").click(function () {
-    next()
-})
-$(".left").click(function () {
-    pre()
-})
+// $(".right").click(function () {
+//     next()
+// })
+// $(".left").click(function () {
+//     pre()
+// })
 
 function setTimer() {
     setInterval(() => {
         next()
-    }, 5000)
+    }, 3000)
 }
 setTimer()

@@ -74,9 +74,9 @@ body::before{
     /* z-index: -1; */
 }
 .logo{
-    background-image: url(/images/finallogo.png);
+    background-image: url(../images/enlogo.png);
     width:250px;
-    height: 140px;
+    height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
     /* position: absolute; */

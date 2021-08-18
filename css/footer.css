@@ -3,7 +3,7 @@
     height: 300px;
     width: 100%;
     min-width: var(--page-width);
-    background-image: url(/images/nav_icon/footer_bg.png);
+    background-image: url(../images/footer_bg.png);
     background-position: center;
     /* background-repeat: no-repeat; */
 }

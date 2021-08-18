@@ -5,7 +5,7 @@
     margin: 0 auto;
     min-width: var(--page-width);
     /* position: relative; */
-    height: 950px;
+    height: 750px;
 }
 .cate_bread{
     min-width: var(--page-width);
@@ -119,9 +119,6 @@
     /* justify-content: space-evenly; */
     align-items: center;
     /* margin-left: 50px; */
-}
-.brands_story{
-    margin-bottom: 80px;
 }
 .brands_story div,.brands_people div{
     width: 400px;

@@ -1,5 +1,5 @@
 .content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1200px;
     margin: 0 auto;
     min-width: var(--page-width);
@@ -48,7 +48,7 @@
     /* padding: 0; */
 }
 .info_blk{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
     margin-left: 30px;
@@ -116,7 +116,7 @@
 }
 
 .para_blk{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* position: absolute; */
     /* width: 1200px; */
     /* left: 50%; */

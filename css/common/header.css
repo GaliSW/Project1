@@ -1,0 +1,312 @@
+/* .bg_banner{
+    background-image: url(/images/bg-1\ copy.jpeg);
+    min-width: var(--page-width);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 170px;
+    background-attachment: fixed;
+    filter: blur(1px);
+}
+.bg_filter{
+    min-width: var(--page-width);
+    width: 100%;
+    height: 10;
+    z-index: -2;
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    background-attachment: fixed;
+} */
+
+/* body{
+    background-image: url(/images/bg_blur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: var(--page-width);
+    background-attachment: fixed;
+    
+}   */
+.bg{
+    /* position: absolute;x */
+    z-index: -2;
+    position: fixed;
+    /* border: 1px solid red; */
+    width: 100%;
+    min-width: var(--page-width);
+}
+.bg img{
+    width: 100%;
+}
+body::before{
+    min-width: var(--page-width);
+    content:'DHL EXPRESS & SF EXPRESS WORLDWIDE SHIPPING' ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color:#BFA459;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: linear-gradient(0deg, rgba(26,55,96,1) 0%, rgba(14,23,43,1) 100%);
+}
+.header_block{
+    min-width: var(--page-width);
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+    /* background-color: #0E172B; */
+}
+.logoblk{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    position: relative;
+    margin:30px auto;
+    /* z-index: -1; */
+}
+.logo{
+    background-image: url(/images/finallogo.png);
+    width:250px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    /* border: 1px solid red; */
+    top: 0; 
+}
+/* *header_icon */
+
+
+.header_icon{
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    /* text-align: right; */
+    position: absolute;
+    right: 0px;
+    top:30px;
+    /* z-index: 1; */
+    
+}
+.icon_list{
+    list-style: none;
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    /* padding-left: 50px; */
+    padding-right: 10px;
+
+}
+
+.search_blk{
+    display: inline-flex;
+    /* background-color: #2f3640; */
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* width: 50px; */
+}
+.search_input{
+    border: none;
+    background: none;
+    outline: none;
+    transition: .5s;
+    line-height: 40px;
+    font-size: 1.8rem;
+    color: #D3E0E8 ;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+}
+.search_blk:hover .search_input{
+    opacity: 1;
+    width: 150px;
+    padding: 0 6px;
+    border-radius: 30px;
+    background-color:#457DB5;
+}
+.search_blk:hover .search_img{
+    background-color: #D3E0E8;
+    
+}
+.search_img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    /* background-color: #2f3640; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    right: 5px;
+}
+.member_img{
+    /* border: 1px solid black; */
+    width: 40px;
+    display: flex;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0px;
+    color: #457DB5 ;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.cart_img{
+    /* border: 1px solid black; */
+    width: 40px;
+    display: flex;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0px;
+    text-decoration: none;
+    color: #457DB5;
+    justify-content: center;
+    align-items: center;
+}
+.member_img:hover, .cart_img:hover{
+    color:  #0E172B;
+    transition: ease-in-out .3s;
+    background-color: #D3E0E8;
+}
+
+/* *navbar */
+
+
+.nav_list{
+    min-width: var(--page-width);
+    /* width: 1200px; */
+    display: flex;
+    /* position: relative; */
+    list-style: none;
+    /* border: 1px solid red; */
+    justify-content: center;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(26,55,96,1) 0%, rgba(14,23,43,1) 100%);
+    padding: 0;
+}
+.category, .brand, .lookbook{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.category_blk , .brand_blk , .lookbook_blk{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 60px;
+    font-size: 1.6rem;
+    color: #D3E0E8;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .3s;
+}
+/* .lookbook_blk{
+    border: 1px solid red;
+    position: relative;
+} */
+.lookbook_blk a{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color:  #D3E0E8;
+}
+
+.category_blk:hover, .brand_blk:hover{
+    background-color:#1A3760;
+}
+
+.lookbook_blk:hover a{
+    /* color: #BFA459; */
+    background-color: #1A3760;
+    transition: ease-in-out .3s;
+}
+
+.brand_link{
+    /* border: 1px solid black; */
+    position: absolute;
+    list-style: none;
+    top: 48px;
+    padding:0;
+    width: 200px;
+    z-index: 1;
+}
+
+.category_link{
+    position: absolute;
+    list-style: none;
+    top: 48px;
+    padding:0;
+    width: 200px;
+    z-index: 1;
+}
+.category_link a, .brand_link a{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    opacity: 0;
+    transition: ease-in-out .3s ;
+    color:#D3E0E8;
+    background-color: #1A3760;
+}
+
+.category_link li:last-child a, .brand_link li:last-child a{
+    border-radius: 0 0 10px 10px;
+}
+
+
+.category_blk:hover .category_link a, .brand_blk:hover .brand_link a{
+    height: 40px;
+    opacity: 1;
+}
+
+.category_link a:hover, .brand_link a:hover{
+    background-color: #457DB5;
+}
+.btn_totop{
+    border: 1px solid #D3E0E8;
+    background-color: hsla(215, 57%, 24%, .7);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 55px;
+    position: fixed;
+    bottom: 0px;
+    color: #D3E0E8;
+    cursor: pointer;
+    /* user-select: none; */
+    transition: all .3s;
+    right: -55px;
+    z-index: 1;
+}
+
+.btn_totop:hover i{
+    transform: rotate(360deg);
+    transition: 1s;
+}

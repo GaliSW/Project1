@@ -1,0 +1,153 @@
+.sign_blk{
+    /* border: 1px solid red; */
+    min-width:var(--page-width);
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.sign_label{
+    /* border: 1px solid blue; */
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+.sign_label input{
+    display: none;
+}
+.sign_label label{
+    /* border: 1px solid yellow; */
+    width: 400px;
+    height: 50px;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 50px;
+    /* background-color:rgba(255, 255, 255,.5); */
+} 
+.signin,.signup{
+    background-color:rgba(255, 255, 255,.5);
+    color: #BFA459;
+}
+.signin{
+    border-radius: 10px 0 0 0;
+    border-left: 1px solid #D3E0E8;
+    border-top: 1px solid #D3E0E8;
+    border-right: 1px solid #D3E0E8;
+    cursor: pointer;
+}
+.signup{
+    border-radius: 0px 10px 0 0;
+    border-left: 1px solid #D3E0E8;
+    border-top: 1px solid #D3E0E8;
+    border-right: 1px solid #D3E0E8;
+    cursor: pointer;
+}
+.-off{
+    color: #1A3760;
+    border: 1px solid #D3E0E8;
+    background-color: rgba(255, 255, 255,.7);
+}
+.custom_blk{
+    /* border: 1px solid red; */
+    margin: 0px auto;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 50px;
+    border-left: 1px solid #D3E0E8;
+    border-right: 1px solid #D3E0E8;
+    border-bottom: 1px solid #D3E0E8;
+    box-shadow: 15px 15px 13px -7px #010615;
+}
+.custom_blk , .custom>form {
+    width: 800px;
+    height: 500px;
+}
+.custom_middle{
+    position: relative;
+    width: calc(800px * 2);
+}
+.custom{
+    display: flex;
+    list-style: none;
+    /* border: 1px solid red; */
+    padding: 0;
+}
+.signin_blk, .signup_blk{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:  rgba(255, 255, 255,.5);
+}
+.fb,.google{
+    /* margin: 5px 0; */
+    border: 1px solid #BFA459;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #D3E0E8;
+    font-size: 1.6rem;
+    background-color: #1A3760;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+.fb:hover,.google:hover{
+    background-color: #BFA459;
+}
+.icon{
+    color: #D3E0E8;
+    border: #BFA459;
+}
+.line{
+    /* margin:20px auto; */
+    border-top: 1px solid  hsla(203, 31%, 87%, 1);
+    width: 700px;
+}
+.mail{
+    text-decoration: none;
+    color: #010615;
+    font-size: 1.6rem;
+}
+.enter{
+    height: 40px;
+    line-height: 30px;
+    width: 400px;
+    font-size: 1.6rem;
+    background-color: rgba(255, 255, 255,.8);
+    border: 1px solid  rgba(255, 255, 255,.5);
+    border-radius: 5px;
+}
+.signin_blk label{
+    /* border: 1px solid red; */
+    color: #010615;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    /* line-height: 20px; */
+}
+.letgo{
+    background-color: #BFA459;
+    width: 400px;
+    height:40px ;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.8rem;
+    color:white;
+    border-radius: 5px;
+    transition: .2s ease-out;
+}
+.letgo:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+.forgot{
+    color: #D3E0E8;
+    font-size: 1.6rem;
+    transition: .3s ease-in;
+}
+.forgot:hover{
+    color: #BFA459;
+}

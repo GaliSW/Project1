@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /*10px*/
+    /*變數寫法*/
+    --page-width: 1200px;
+    font-family: Arial;
+}
+body{
+    margin:0;
+    padding: 0;
+}

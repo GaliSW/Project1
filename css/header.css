@@ -470,6 +470,7 @@ body::before{
         flex-direction: column;
         border: 1px solid #0E172B;
         transition: all .3s ease-in;
+        z-index: 999;
     }
     .menu ul{
         font-size: 1.6rem;
@@ -571,7 +572,7 @@ body::before{
         background-color: #D3E0E8;
         line-height: 30px;
         padding-left: 20px;
-        z-index: 999;
+        z-index: 2;
         opacity: 0;
         transition: all .3s ease-in-out
     }

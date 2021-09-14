@@ -17,39 +17,75 @@
 </head>
 
 <body>
+    <div class="loading-wrapper"></div>
     <div class="bg">
         <img src="../images/bg_blur.png" alt="">
     </div>
     <header class="header">
         <div class="header_block">
-            <nav class="nav">
-                <ul class="nav_list">
-                    <div class="category_blk">
-                        <p class="category">CATEGORY</p>
-                        <ul class="category_link">
+            <ul class="nav_list">
+                <!-- rwd_blk -->
+                <div class="menu_container">
+                    <input type="checkbox" name="open" id="open">
+                    <label for="open" class="bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="menu">
+                        <input type="checkbox" name="touch" id="category">
+                        <label for="category" class="category_title">CATEGORY<i class="fas fa-sort-down"></i></label>
+                        <ul class="category_bar">
                             <li><a href="../html/category.html">CLOTHING</a></li>
                             <li><a href="../html/category.html">ACCESSORIES</a></li>
                             <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
                         </ul>
+                        <input type="checkbox" name="touch" id="brands">
+                        <label for="brands" class="brands_title">BRANDS<i class="fas fa-sort-down"></i></label>
+                        <ul class="brand_bar">
+                            <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                            <li><a href="../html/brands.html">VISVIM</a></li>
+                            <li><a href="../html/brands.html">KAPITAL</a></li>
+                            <li><a href="../html/brands.html">Kuon</a></li>
+                            <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                        </ul>
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <div class="brand_blk">
-                        <p class="brand">BRANDS</p>
-                        <ul class="brand_link">
-                            <li><a href="../html/visvim.html">BlueBlueJapan</a></li>
-                            <li><a href="../html/visvim.html">VISVIM</a></li>
-                            <li><a href="../html/visvim.html">KAPITAL</a></li>
-                            <li><a href="../html/visvim.html">Kuon</a></li>
-                            <li><a href="../html/visvim.html">Story&nbsp;MFg.</a></li>
+                </div>
+                <!-- rwd_blk -->
+                <div class="search_blk_rwd">
+                    <input type="checkbox" name="abc" id="search">
+                    <label for="search" class="search_label"><img src="../images/nav_icon/bluesearch.png"
+                            style="width: 20px;" alt=""></label>
+                    <input type="text" placeholder="Search" class="search_input_rwd">
+                </div>
+                <!-- rwd_blk -->
+                <div class="category_blk">
+                    <p class="category">CATEGORY</p>
+                    <ul class="category_link">
+                        <li><a href="../html/category.html">CLOTHING</a></li>
+                        <li><a href="../html/category.html">ACCESSORIES</a></li>
+                        <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
+                    </ul>
+                </div>
+                <div class="brand_blk">
+                    <p class="brand">BRANDS</p>
+                    <ul class="brand_link">
+                        <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                        <li><a href="../html/brands.html">VISVIM</a></li>
+                        <li><a href="../html/brands.html">KAPITAL</a></li>
+                        <li><a href="../html/brands.html">Kuon</a></li>
+                        <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                    </ul>
+                </div>
+                <li>
+                    <div class="lookbook_blk">
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <li>
-                        <div class="lookbook_blk">
-                            <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                </li>
+            </ul>
             <div class="logoblk">
-                <a href="" class="logo"></a>
+                <a href="./index.html" class="logo"></a>
                 <ul class="icon_list">
                     <li>
                         <div class="search_blk"><input type="text" class="search_input">
@@ -80,31 +116,36 @@
                 <input type="radio" id="about-toggle" name="info_list" checked />
                 <label for="about-toggle" class="about">ABOUT US</label>
                 <input type="radio" id="stockies-toggle" name="info_list" />
-                <label for="stockies-toggle" class="stockies">STOCKIES</label>
+                <label for="stockies-toggle" class="stockies" id="stockies">STOCKIES</label>
                 <input type="radio" id="shipping-toggle" name="info_list" />
-                <label for="shipping-toggle" class="shipping">SHIPPING & RETURNS</label>
+                <label for="shipping-toggle" class="shipping">SHIPPING <span class="label_none">& RETURNS</span></label>
                 <input type="radio" id="turns-toggle" name="info_list" />
-                <label for="turns-toggle" class="turns">TURNS & CONDITIONS</label>
+                <label for="turns-toggle" class="turns">TERMS <span class="label_none">& CONDITIONS</span></label>
                 <input type="radio" id="privacy-toggle" name="info_list" />
-                <label for="privacy-toggle" class="privacy">PRIVACY POLICY</label>
+                <label for="privacy-toggle" class="privacy"><span class="label_none">PRIVACY</span> POLICY</label>
             </div>
             <div class="para_blk">
                 <div class="para_middle">
                     <div class="para">
                         <p class="para1">
                             Established in 2021, based in Taiwan.
-                            Indigo, high-quality vintage garments and designers’ brands are the main product offerings
-                            of SOME Indigo. We provide unique and nice designs and steadily quality of selected brands.
+                            Indigo, high-quality vintage garments and designers’ brands are the main product
+                            offerings
+                            of SOME Indigo. We provide unique and nice designs and steadily quality of selected
+                            brands.
                             <br><br>
-                            With SOME Indigo as our own designed brand, you can find indigo clothing based brand with
+                            With SOME Indigo as our own designed brand, you can find indigo clothing based brand
+                            with
                             designs full of details at the shop page.
                             <br><br>
                             Driven by thoughtful design, what we care the most is always the quality of fabrics and
                             design. We seek for collaboration in different areas. Not only have we worked with many
-                            talented artists and designers in Japan, Hong Kong and Taiwan, but with brands which share
+                            talented artists and designers in Japan, Hong Kong and Taiwan, but with brands which
+                            share
                             the same value as us.
                             <br><br>
-                            Hope you will find some interesting brands and brilliant details of the design in our store,
+                            Hope you will find some interesting brands and brilliant details of the design in our
+                            store,
                             update every week.
                             <br><br>
                             “Just look around, you will found something is good ”
@@ -157,11 +198,13 @@
                             <br><br>
                             SOME' orders are delivered Monday to Friday.
                             <br><br>
-                            We use DHL express, SF express as our couriers. Normally it takes 3-5 working days. Please
+                            We use DHL express, SF express as our couriers. Normally it takes 3-5 working days.
+                            Please
                             Keep in mind that our shipping times should be used as a guide only and are based on the
                             time from dispatch.
                             <br><br>
-                            SOME' CANNOT take responsibility for Customs Clearance delays or failed payment approval.
+                            SOME' CANNOT take responsibility for Customs Clearance delays or failed payment
+                            approval.
                             <br>
                             <span class="line1"></span>
                             <br><br>
@@ -169,26 +212,30 @@
                             <br><br>
                             SOME' To be eligible for a return, please make sure to read the following points:
                             <br><br>
-                            1.&nbsp;&nbsp;&nbsp;All return items must be in NEW/ORIGINAL and resalable with all tags and
+                            1.&nbsp;&nbsp;&nbsp;All return items must be in NEW/ORIGINAL and resalable with all tags
+                            and
                             original package
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attached.
                             <br><br>
                             2.&nbsp;&nbsp;&nbsp;Please make sure all return items are well packaged, so as not to be
                             damaged in the post.
                             <br><br>
-                            3.&nbsp;&nbsp;&nbsp;We currently don't cover shipping costs. All return shipping fees are
+                            3.&nbsp;&nbsp;&nbsp;We currently don't cover shipping costs. All return shipping fees
+                            are
                             your responsibility.
                             <br><br>
                             4.&nbsp;&nbsp;&nbsp;Return packages are the customers' responsibility until they are
                             received by us. We
                             strongly &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommend that you use a registered and
                             traceable service or
-                            purchase shipping insurance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when returning your item(s).
+                            purchase shipping insurance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when returning your
+                            item(s).
                             This way you'll
                             know that it's been delivered to us
                             safe and sound.
                             <br><br>
-                            5.&nbsp;&nbsp;&nbsp;Upon dispute, SOME' reserves the right to make the final decision on all
+                            5.&nbsp;&nbsp;&nbsp;Upon dispute, SOME' reserves the right to make the final decision on
+                            all
                             return cases.
                             <br><br>
                             TO RETURN YOUR ITEM, YOU SHOULD MAIL YOUR PRODUCT TO: 9F., NO.97., Sec.2., Hankou St.,
@@ -238,42 +285,51 @@
                         <p class="para5">
                             <span class="title">- POLICY -</span>
                             <br><br>
-                            We take your online safety and the security of your information very seriously. This policy
+                            We take your online safety and the security of your information very seriously. This
+                            policy
                             outlines how we handle that information.
                             <br><br><br>
                             <span class="line3"></span>
                             What information do we collect?
                             <br><br>
                             Through this website you are able to order products, make requests for information and
-                            register to receive materials.The kinds of information we collect on these pages are your
+                            register to receive materials.The kinds of information we collect on these pages are
+                            your
                             name, postal address, email address and phone number.
                             <br><br>
-                            We do not collect credit/debit card information. This data is handled securely by a third
+                            We do not collect credit/debit card information. This data is handled securely by a
+                            third
                             party payment processor.None of your credit/debit card information is stored anywhere on
                             this site.
                             <br><br><br>
                             <span class="line4"></span>
                             How do we use your information?
                             <br><br>
-                            The information you provide about yourself when placing an order is used solely to complete
+                            The information you provide about yourself when placing an order is used solely to
+                            complete
                             that order. This information is not shared with any third parties except where it is
                             necessary to complete/deliver the order.
                             <br><br>
-                            We use email addresses provided to answer emails we receive. Your email address is not used
+                            We use email addresses provided to answer emails we receive. Your email address is not
+                            used
                             for any other purpose and is not shared with any third parties.
                             <br><br>
                             You can register for updates on new products, sales, restocked items, services and
                             information. You can unsubscribe from these updates at any time.
                             <br><br>
-                            We may use non-identifying aggregate information to better design our website and services
-                            but will never use or share the personally identifiable information provided to us in any
+                            We may use non-identifying aggregate information to better design our website and
+                            services
+                            but will never use or share the personally identifiable information provided to us in
+                            any
                             other way without also providing you an opportunity to opt-out of such unrelated uses.
                             <br><br><br>
                             <span class="line5"></span>
                             How can you access and edit your account information?
                             <br><br>
-                            You can access all your personal information that we collect online and maintain by logging
-                            into your account with the email address and password you created when you registered with
+                            You can access all your personal information that we collect online and maintain by
+                            logging
+                            into your account with the email address and password you created when you registered
+                            with
                             us.
                             <br><br>
                             If you have any questions or concerns at all regarding these privacy policies, please
@@ -290,7 +346,7 @@
                 <li><a href="../html/info.html">About US</a></li>
                 <li><a href="../html/info.html">Stockies</a></li>
                 <li><a href="../html/info.html">Shipping & Returns</a></li>
-                <li><a href="../html/info.html">Turns & Conditions</a></li>
+                <li><a href="../html/info.html">Terms & Conditions</a></li>
                 <li><a href="../html/info.html">Privacy Policy</a></li>
             </ul>
         </div>
@@ -310,36 +366,207 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.stockies').click(function () {
-                $('.para_middle').css('left', '-700px');
-                console.log("test");
-            })
+
+        $(window).ready(function () {
+            if (window.innerWidth < 575.98) {
+                $(document).ready(function () {
+                    $('.stockies').click(function () {
+                        $('.para_middle').css('left', '-375px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.about').click(function () {
+                        $('.para_middle').css('left', '0px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.shipping').click(function () {
+                        $('.para_middle').css('left', '-750px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.turns').click(function () {
+                        $('.para_middle').css('left', '-1125px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.privacy').click(function () {
+                        $('.para_middle').css('left', '-1500px');
+                        console.log("test375");
+                    })
+                });
+            } else if (window.innerWidth < 991.98) {
+                $(document).ready(function () {
+                    $('.stockies').click(function () {
+                        $('.para_middle').css('left', '-500px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.about').click(function () {
+                        $('.para_middle').css('left', '0px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.shipping').click(function () {
+                        $('.para_middle').css('left', '-1000px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.turns').click(function () {
+                        $('.para_middle').css('left', '-1500px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.privacy').click(function () {
+                        $('.para_middle').css('left', '-2000px');
+                        console.log("test991");
+                    })
+                });
+            } else {
+                $(document).ready(function () {
+                    $('.stockies').click(function () {
+                        $('.para_middle').css('left', '-700px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.about').click(function () {
+                        $('.para_middle').css('left', '0px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.shipping').click(function () {
+                        $('.para_middle').css('left', '-1400px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.turns').click(function () {
+                        $('.para_middle').css('left', '-2100px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.privacy').click(function () {
+                        $('.para_middle').css('left', '-2800px');
+                        // console.log("test");
+                    })
+                });
+            }
+        });
+
+
+        $(window).resize(function () {
+            if (window.innerWidth < 575.98) {
+                $(document).ready(function () {
+                    $('.stockies').click(function () {
+                        $('.para_middle').css('left', '-375px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.about').click(function () {
+                        $('.para_middle').css('left', '0px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.shipping').click(function () {
+                        $('.para_middle').css('left', '-750px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.turns').click(function () {
+                        $('.para_middle').css('left', '-1125px');
+                        console.log("test375");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.privacy').click(function () {
+                        $('.para_middle').css('left', '-1500px');
+                        console.log("test375");
+                    })
+                });
+            } else if (window.innerWidth < 991.98) {
+                $(document).ready(function () {
+                    $('.stockies').click(function () {
+                        $('.para_middle').css('left', '-500px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.about').click(function () {
+                        $('.para_middle').css('left', '0px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.shipping').click(function () {
+                        $('.para_middle').css('left', '-1000px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.turns').click(function () {
+                        $('.para_middle').css('left', '-1500px');
+                        console.log("test991");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.privacy').click(function () {
+                        $('.para_middle').css('left', '-2000px');
+                        console.log("test991");
+                    })
+                });
+            } else {
+                $(document).ready(function () {
+                    $('.stockies').click(function () {
+                        $('.para_middle').css('left', '-700px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.about').click(function () {
+                        $('.para_middle').css('left', '0px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.shipping').click(function () {
+                        $('.para_middle').css('left', '-1400px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.turns').click(function () {
+                        $('.para_middle').css('left', '-2100px');
+                        // console.log("test");
+                    })
+                });
+                $(document).ready(function () {
+                    $('.privacy').click(function () {
+                        $('.para_middle').css('left', '-2800px');
+                        // console.log("test");
+                    })
+                });
+            }
         })
+
         $(document).ready(function () {
-            $('.about').click(function () {
-                $('.para_middle').css('left', '0px');
-                console.log("test");
-            })
-        })
-        $(document).ready(function () {
-            $('.shipping').click(function () {
-                $('.para_middle').css('left', '-1400px');
-                console.log("test");
-            })
-        })
-        $(document).ready(function () {
-            $('.turns').click(function () {
-                $('.para_middle').css('left', '-2100px');
-                console.log("test");
-            })
-        })
-        $(document).ready(function () {
-            $('.privacy').click(function () {
-                $('.para_middle').css('left', '-2800px');
-                console.log("test");
-            })
-        })
+            setTimeout(function () {
+                $(".loading-wrapper").fadeOut(800);
+            }, 100)
+        });
     </script>
 </body>
 

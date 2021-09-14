@@ -22,39 +22,75 @@
 </head>
 
 <body>
+    <div class="loading-wrapper"></div>
     <div class="bg">
         <img src="../images/bg_blur.png" alt="">
     </div>
     <header class="header">
         <div class="header_block">
-            <nav class="nav">
-                <ul class="nav_list">
-                    <div class="category_blk">
-                        <p class="category">CATEGORY</p>
-                        <ul class="category_link">
+            <ul class="nav_list">
+                <!-- rwd_blk -->
+                <div class="menu_container">
+                    <input type="checkbox" name="open" id="open">
+                    <label for="open" class="bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="menu">
+                        <input type="checkbox" name="touch" id="category">
+                        <label for="category" class="category_title">CATEGORY<i class="fas fa-sort-down"></i></label>
+                        <ul class="category_bar">
                             <li><a href="../html/category.html">CLOTHING</a></li>
                             <li><a href="../html/category.html">ACCESSORIES</a></li>
                             <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
                         </ul>
+                        <input type="checkbox" name="touch" id="brands">
+                        <label for="brands" class="brands_title">BRANDS<i class="fas fa-sort-down"></i></label>
+                        <ul class="brand_bar">
+                            <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                            <li><a href="../html/brands.html">VISVIM</a></li>
+                            <li><a href="../html/brands.html">KAPITAL</a></li>
+                            <li><a href="../html/brands.html">Kuon</a></li>
+                            <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                        </ul>
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <div class="brand_blk">
-                        <p class="brand">BRANDS</p>
-                        <ul class="brand_link">
-                            <li><a href="../html/visvim.html">BlueBlueJapan</a></li>
-                            <li><a href="../html/visvim.html">VISVIM</a></li>
-                            <li><a href="../html/visvim.html">KAPITAL</a></li>
-                            <li><a href="../html/visvim.html">Kuon</a></li>
-                            <li><a href="../html/visvim.html">Story&nbsp;MFg.</a></li>
+                </div>
+                <!-- rwd_blk -->
+                <div class="search_blk_rwd">
+                    <input type="checkbox" name="abc" id="search">
+                    <label for="search" class="search_label"><img src="../images/nav_icon/bluesearch.png"
+                            style="width: 20px;" alt=""></label>
+                    <input type="text" placeholder="Search" class="search_input_rwd">
+                </div>
+                <!-- rwd_blk -->
+                <div class="category_blk">
+                    <p class="category">CATEGORY</p>
+                    <ul class="category_link">
+                        <li><a href="../html/category.html">CLOTHING</a></li>
+                        <li><a href="../html/category.html">ACCESSORIES</a></li>
+                        <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
+                    </ul>
+                </div>
+                <div class="brand_blk">
+                    <p class="brand">BRANDS</p>
+                    <ul class="brand_link">
+                        <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                        <li><a href="../html/brands.html">VISVIM</a></li>
+                        <li><a href="../html/brands.html">KAPITAL</a></li>
+                        <li><a href="../html/brands.html">Kuon</a></li>
+                        <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                    </ul>
+                </div>
+                <li>
+                    <div class="lookbook_blk">
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <li>
-                        <div class="lookbook_blk">
-                            <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                </li>
+            </ul>
             <div class="logoblk">
-                <a href="" class="logo"></a>
+                <a href="./index.html" class="logo"></a>
                 <ul class="icon_list">
                     <li>
                         <div class="search_blk"><input type="text" class="search_input">
@@ -85,15 +121,6 @@
                             <img src="../images/cart/p3.jpeg" alt="">
                         </div>
                         <div>
-                            <img src="../images/cart/p4.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img src="../images/cart/p5.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img src="../images/cart/p6.jpeg" alt="">
-                        </div>
-                        <div>
                             <img src="../images/cart/p7.jpeg" alt="">
                         </div>
                         <div>
@@ -115,15 +142,6 @@
                         </div>
                         <div>
                             <img src="../images/cart/p3.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img src="../images/cart/p4.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img src="../images/cart/p5.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img src="../images/cart/p6.jpeg" alt="">
                         </div>
                         <div>
                             <img src="../images/cart/p7.jpeg" alt="">
@@ -150,37 +168,31 @@
             <div class="selection">
                 <div>
                     <h2>Size</h2>
-                    <select>
-                        <option value="1">S</option>
-                        <option value="2">M</option>
-                        <option value="3">L</option>
-                        <option value="4">XL</option>
-                    </select>
+                    <div>
+                        <select class="size_select">
+                            <option value="1">S</option>
+                            <option value="2">M</option>
+                            <option value="3">L</option>
+                            <option value="4">XL</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
+                <div class="quantity">
                     <h2>Quantity</h2>
-                    <select>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
                 </div>
             </div>
             <div class="cta">
-                <a href="">ADD TO CART</a>
+                <a href="" class="add-to-cart">ADD TO CART</a>
                 <a href="">BUY NOW</a>
             </div>
             <div class="delivery">
-                <h1>Delivery Options</h1>
-                <p>- Japan、Korea、Singapore
+                <h1 class="delivery_btn">Delivery Options&nbsp;<i class="far fa-caret-square-down"></i></h1>
+                <p class="delivery_para -on">- Japan、Korea、Singapore
                     <br>
                     - Thailand 、Vietnam、Philippines、Indonesia
                     <br>
@@ -283,6 +295,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/slick.js"></script>
+    <script src="../js/cart.js"></script>
+    <script>
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
+
+        function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+                value = isNaN(value) ? 0 : value;
+                value--;
+                input.value = value;
+            }
+        }
+    </script>
     <script>$('.slider-single').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -338,15 +370,34 @@
             var goToSingleSlide = $(this).data('slick-index');
 
             $('.slider-single').slick('slickGoTo', goToSingleSlide);
-        });</script>
-    <script>$(document).ready(function () {
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $('.delivery_btn').click(function () {
+                $('.delivery_para').removeClass('-on');
+                $('.delivery_para').toggle();
+            })
+        })
+
+        $(document).ready(function () {
             $('.carousel').slick({
                 slidesToShow: 4,
                 dots: true,
                 centerMode: true,
                 arrows: true,
             });
-        });</script>
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loading-wrapper").fadeOut(800);
+            }, 100)
+        });
+    </script>
 </body>
 
 </html>

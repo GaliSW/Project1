@@ -16,39 +16,75 @@
 </head>
 
 <body>
+    <div class="loading-wrapper"></div>
     <div class="bg">
         <img src="../images/bg_blur.png" alt="">
     </div>
     <header class="header">
         <div class="header_block">
-            <nav class="nav">
-                <ul class="nav_list">
-                    <div class="category_blk">
-                        <p class="category">CATEGORY</p>
-                        <ul class="category_link">
+            <ul class="nav_list">
+                <!-- rwd_blk -->
+                <div class="menu_container">
+                    <input type="checkbox" name="open" id="open">
+                    <label for="open" class="bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="menu">
+                        <input type="checkbox" name="touch" id="category">
+                        <label for="category" class="category_title">CATEGORY<i class="fas fa-sort-down"></i></label>
+                        <ul class="category_bar">
                             <li><a href="../html/category.html">CLOTHING</a></li>
                             <li><a href="../html/category.html">ACCESSORIES</a></li>
                             <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
                         </ul>
+                        <input type="checkbox" name="touch" id="brands">
+                        <label for="brands" class="brands_title">BRANDS<i class="fas fa-sort-down"></i></label>
+                        <ul class="brand_bar">
+                            <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                            <li><a href="../html/brands.html">VISVIM</a></li>
+                            <li><a href="../html/brands.html">KAPITAL</a></li>
+                            <li><a href="../html/brands.html">Kuon</a></li>
+                            <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                        </ul>
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <div class="brand_blk">
-                        <p class="brand">BRANDS</p>
-                        <ul class="brand_link">
-                            <li><a href="../html/visvim.html">BlueBlueJapan</a></li>
-                            <li><a href="../html/visvim.html">VISVIM</a></li>
-                            <li><a href="../html/visvim.html">KAPITAL</a></li>
-                            <li><a href="../html/visvim.html">Kuon</a></li>
-                            <li><a href="../html/visvim.html">Story&nbsp;MFg.</a></li>
+                </div>
+                <!-- rwd_blk -->
+                <div class="search_blk_rwd">
+                    <input type="checkbox" name="abc" id="search">
+                    <label for="search" class="search_label"><img src="../images/nav_icon/bluesearch.png"
+                            style="width: 20px;" alt=""></label>
+                    <input type="text" placeholder="Search" class="search_input_rwd">
+                </div>
+                <!-- rwd_blk -->
+                <div class="category_blk">
+                    <p class="category">CATEGORY</p>
+                    <ul class="category_link">
+                        <li><a href="../html/category.html">CLOTHING</a></li>
+                        <li><a href="../html/category.html">ACCESSORIES</a></li>
+                        <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
+                    </ul>
+                </div>
+                <div class="brand_blk">
+                    <p class="brand">BRANDS</p>
+                    <ul class="brand_link">
+                        <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                        <li><a href="../html/brands.html">VISVIM</a></li>
+                        <li><a href="../html/brands.html">KAPITAL</a></li>
+                        <li><a href="../html/brands.html">Kuon</a></li>
+                        <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                    </ul>
+                </div>
+                <li>
+                    <div class="lookbook_blk">
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <li>
-                        <div class="lookbook_blk">
-                            <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                </li>
+            </ul>
             <div class="logoblk">
-                <a href="" class="logo"></a>
+                <a href="./index.html" class="logo"></a>
                 <ul class="icon_list">
                     <li>
                         <div class="search_blk"><input type="text" class="search_input">
@@ -78,7 +114,7 @@
         <!-- <video class="vd_blk" autoplay muted loop>
             <source src="https://youtu.be/vY-twp50i_8" type="video/webm">
         </video> -->
-        <iframe width="1200" height="675"
+        <iframe
             src="https://www.youtube.com/embed/vY-twp50i_8?rel=0&controls=0&loop=1&autoplay=1&mute=1&playlist=vY-twp50i_8"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -166,11 +202,28 @@
             </div>
         </div>
         <div>
-            <img src="../images/lookbook/L9.jpeg" alt="#">
+            <img src="../images/lookbook/L9.jpeg" alt="#" class="none">
         </div>
     </div>
+    <div class="content6">
+        <div>
+            <img src="../images/lookbook/L10.jpeg" alt="#">
+        </div>
+        <div>
+            <img src="../images/lookbook/L11.jpeg" alt="#">
+        </div>
+    </div>
+    <div class="content7">
+        <img src="../images/lookbook/L12.jpeg" alt="">
+        <img src="../images/lookbook/L14.jpeg" alt="">
+        <img src="../images/lookbook/L13.jpeg" alt="">
+    </div>
+    <div class="content8">
+        <img src="../images/lookbook/L15.jpeg" alt="">
+        <img src="../images/lookbook/L16.jpeg" alt="">
+    </div>
     <div class="readbtn">
-        <a href="">READ MORE</a>
+        <span>READ MORE</span>
     </div>
     <footer class="footer_blk">
         <div class="info">
@@ -178,7 +231,7 @@
                 <li><a href="../html/info.html">About US</a></li>
                 <li><a href="../html/info.html">Stockies</a></li>
                 <li><a href="../html/info.html">Shipping & Returns</a></li>
-                <li><a href="../html/info.html">Turns & Conditions</a></li>
+                <li><a href="../html/info.html">Terms & Conditions</a></li>
                 <li><a href="../html/info.html">Privacy Policy</a></li>
             </ul>
         </div>
@@ -196,7 +249,21 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/btn_totop.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loading-wrapper").fadeOut(800);
+            }, 100)
+        });
+        $(".readbtn").click(function () {
+            $(".content6").css("display", "flex");
+            $(".content7").css("display", "flex");
+            $(".content8").css("display", "flex");
+            $(".readbtn").css("display", "none");
+        })
+    </script>
 </body>
 
 </html>

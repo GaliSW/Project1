@@ -17,39 +17,75 @@
 </head>
 
 <body>
+    <div class="loading-wrapper"></div>
     <div class="bg">
         <img src="../images/bg_blur.png" alt="">
     </div>
     <header class="header">
         <div class="header_block">
-            <nav class="nav">
-                <ul class="nav_list">
-                    <div class="category_blk">
-                        <p class="category">CATEGORY</p>
-                        <ul class="category_link">
+            <ul class="nav_list">
+                <!-- rwd_blk -->
+                <div class="menu_container">
+                    <input type="checkbox" name="open" id="open">
+                    <label for="open" class="bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="menu">
+                        <input type="checkbox" name="touch" id="category">
+                        <label for="category" class="category_title">CATEGORY<i class="fas fa-sort-down"></i></label>
+                        <ul class="category_bar">
                             <li><a href="../html/category.html">CLOTHING</a></li>
                             <li><a href="../html/category.html">ACCESSORIES</a></li>
                             <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
                         </ul>
+                        <input type="checkbox" name="touch" id="brands">
+                        <label for="brands" class="brands_title">BRANDS<i class="fas fa-sort-down"></i></label>
+                        <ul class="brand_bar">
+                            <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                            <li><a href="../html/brands.html">VISVIM</a></li>
+                            <li><a href="../html/brands.html">KAPITAL</a></li>
+                            <li><a href="../html/brands.html">Kuon</a></li>
+                            <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                        </ul>
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <div class="brand_blk">
-                        <p class="brand">BRANDS</p>
-                        <ul class="brand_link">
-                            <li><a href="../html/visvim.html">BlueBlueJapan</a></li>
-                            <li><a href="../html/visvim.html">VISVIM</a></li>
-                            <li><a href="../html/visvim.html">KAPITAL</a></li>
-                            <li><a href="../html/visvim.html">Kuon</a></li>
-                            <li><a href="../html/visvim.html">Story&nbsp;MFg.</a></li>
+                </div>
+                <!-- rwd_blk -->
+                <div class="search_blk_rwd">
+                    <input type="checkbox" name="abc" id="search">
+                    <label for="search" class="search_label"><img src="../images/nav_icon/bluesearch.png"
+                            style="width: 20px;" alt=""></label>
+                    <input type="text" placeholder="Search" class="search_input_rwd">
+                </div>
+                <!-- rwd_blk -->
+                <div class="category_blk">
+                    <p class="category">CATEGORY</p>
+                    <ul class="category_link">
+                        <li><a href="../html/category.html">CLOTHING</a></li>
+                        <li><a href="../html/category.html">ACCESSORIES</a></li>
+                        <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
+                    </ul>
+                </div>
+                <div class="brand_blk">
+                    <p class="brand">BRANDS</p>
+                    <ul class="brand_link">
+                        <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                        <li><a href="../html/brands.html">VISVIM</a></li>
+                        <li><a href="../html/brands.html">KAPITAL</a></li>
+                        <li><a href="../html/brands.html">Kuon</a></li>
+                        <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                    </ul>
+                </div>
+                <li>
+                    <div class="lookbook_blk">
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <li>
-                        <div class="lookbook_blk">
-                            <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                </li>
+            </ul>
             <div class="logoblk">
-                <a href="" class="logo"></a>
+                <a href="./index.html" class="logo"></a>
                 <ul class="icon_list">
                     <li>
                         <div class="search_blk"><input type="text" class="search_input">
@@ -136,10 +172,110 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+        $(window).ready(function () {
+            if (window.innerWidth < 575.98) {
+                $(document).ready(function () {
+                    $('.signup').click(function () {
+                        $('.custom_middle').css('left', '-360px');
+                        $('.signin').addClass('-off');
+                        $('.signup').removeClass('-off');
+                    })
+                })
+                $(document).ready(function () {
+                    $('.signin').click(function () {
+                        $('.custom_middle').css('left', '0px');
+                        $('.signup').addClass('-off');
+                        $('.signin').removeClass('-off');
+                    })
+                })
+            } else if (window.innerWidth < 767.98) {
+                $(document).ready(function () {
+                    $('.signup').click(function () {
+                        $('.custom_middle').css('left', '-560px');
+                        $('.signin').addClass('-off');
+                        $('.signup').removeClass('-off');
+                    })
+                })
+                $(document).ready(function () {
+                    $('.signin').click(function () {
+                        $('.custom_middle').css('left', '0px');
+                        $('.signup').addClass('-off');
+                        $('.signin').removeClass('-off');
+                    })
+                })
+            } else if (window.innerWidth < 991.98) {
+                $(document).ready(function () {
+                    $('.signup').click(function () {
+                        $('.custom_middle').css('left', '-760px');
+                        $('.signin').addClass('-off');
+                        $('.signup').removeClass('-off');
+                        console.log("575");
+                    })
+                })
+                $(document).ready(function () {
+                    $('.signin').click(function () {
+                        $('.custom_middle').css('left', '0px');
+                        $('.signup').addClass('-off');
+                        $('.signin').removeClass('-off');
+                    })
+                })
+            }
+        })
+
+        $(window).resize(function () {
+            if (window.innerWidth < 575.98) {
+                $(document).ready(function () {
+                    $('.signup').click(function () {
+                        $('.custom_middle').css('left', '-360px');
+                        $('.signin').addClass('-off');
+                        $('.signup').removeClass('-off');
+                    })
+                })
+                $(document).ready(function () {
+                    $('.signin').click(function () {
+                        $('.custom_middle').css('left', '0px');
+                        $('.signup').addClass('-off');
+                        $('.signin').removeClass('-off');
+                    })
+                })
+            } else if (window.innerWidth < 767.98) {
+                $(document).ready(function () {
+                    $('.signup').click(function () {
+                        $('.custom_middle').css('left', '-560px');
+                        $('.signin').addClass('-off');
+                        $('.signup').removeClass('-off');
+                    })
+                })
+                $(document).ready(function () {
+                    $('.signin').click(function () {
+                        $('.custom_middle').css('left', '0px');
+                        $('.signup').addClass('-off');
+                        $('.signin').removeClass('-off');
+                    })
+                })
+            } else if (window.innerWidth < 991.98) {
+                $(document).ready(function () {
+                    $('.signup').click(function () {
+                        $('.custom_middle').css('left', '-760px');
+                        $('.signin').addClass('-off');
+                        $('.signup').removeClass('-off');
+                        console.log("575");
+                    })
+                })
+                $(document).ready(function () {
+                    $('.signin').click(function () {
+                        $('.custom_middle').css('left', '0px');
+                        $('.signup').addClass('-off');
+                        $('.signin').removeClass('-off');
+                    })
+                })
+            }
+        })
+
+
         $(document).ready(function () {
             $('.signup').click(function () {
                 $('.custom_middle').css('left', '-800px');
-                console.log("test");
                 $('.signin').addClass('-off');
                 $('.signup').removeClass('-off');
             })
@@ -147,11 +283,15 @@
         $(document).ready(function () {
             $('.signin').click(function () {
                 $('.custom_middle').css('left', '0px');
-                console.log("test");
                 $('.signup').addClass('-off');
                 $('.signin').removeClass('-off');
             })
         })
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loading-wrapper").fadeOut(800);
+            }, 100)
+        });
     </script>
 </body>
 

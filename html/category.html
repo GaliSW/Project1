@@ -17,39 +17,75 @@
 </head>
 
 <body>
+    <div class="loading-wrapper"></div>
     <div class="bg">
         <img src="../images/bg_blur.png" alt="">
     </div>
     <header class="header">
         <div class="header_block">
-            <nav class="nav">
-                <ul class="nav_list">
-                    <div class="category_blk">
-                        <p class="category">CATEGORY</p>
-                        <ul class="category_link">
+            <ul class="nav_list">
+                <!-- rwd_blk -->
+                <div class="menu_container">
+                    <input type="checkbox" name="open" id="open">
+                    <label for="open" class="bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="menu">
+                        <input type="checkbox" name="touch" id="category">
+                        <label for="category" class="category_title">CATEGORY<i class="fas fa-sort-down"></i></label>
+                        <ul class="category_bar">
                             <li><a href="../html/category.html">CLOTHING</a></li>
                             <li><a href="../html/category.html">ACCESSORIES</a></li>
                             <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
                         </ul>
+                        <input type="checkbox" name="touch" id="brands">
+                        <label for="brands" class="brands_title">BRANDS<i class="fas fa-sort-down"></i></label>
+                        <ul class="brand_bar">
+                            <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                            <li><a href="../html/brands.html">VISVIM</a></li>
+                            <li><a href="../html/brands.html">KAPITAL</a></li>
+                            <li><a href="../html/brands.html">Kuon</a></li>
+                            <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                        </ul>
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <div class="brand_blk">
-                        <p class="brand">BRANDS</p>
-                        <ul class="brand_link">
-                            <li><a href="../html/visvim.html">BlueBlueJapan</a></li>
-                            <li><a href="../html/visvim.html">VISVIM</a></li>
-                            <li><a href="../html/visvim.html">KAPITAL</a></li>
-                            <li><a href="../html/visvim.html">Kuon</a></li>
-                            <li><a href="../html/visvim.html">Story&nbsp;MFg.</a></li>
+                </div>
+                <!-- rwd_blk -->
+                <div class="search_blk_rwd">
+                    <input type="checkbox" name="abc" id="search">
+                    <label for="search" class="search_label"><img src="../images/nav_icon/bluesearch.png"
+                            style="width: 20px;" alt=""></label>
+                    <input type="text" placeholder="Search" class="search_input_rwd">
+                </div>
+                <!-- rwd_blk -->
+                <div class="category_blk">
+                    <p class="category">CATEGORY</p>
+                    <ul class="category_link">
+                        <li><a href="../html/category.html">CLOTHING</a></li>
+                        <li><a href="../html/category.html">ACCESSORIES</a></li>
+                        <li><a href="../html/category.html">HOME & LIFESTYLING</a></li>
+                    </ul>
+                </div>
+                <div class="brand_blk">
+                    <p class="brand">BRANDS</p>
+                    <ul class="brand_link">
+                        <li><a href="../html/brands.html">BlueBlueJapan</a></li>
+                        <li><a href="../html/brands.html">VISVIM</a></li>
+                        <li><a href="../html/brands.html">KAPITAL</a></li>
+                        <li><a href="../html/brands.html">Kuon</a></li>
+                        <li><a href="../html/brands.html">Story&nbsp;MFg.</a></li>
+                    </ul>
+                </div>
+                <li>
+                    <div class="lookbook_blk">
+                        <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
                     </div>
-                    <li>
-                        <div class="lookbook_blk">
-                            <a href="../html/lookbook.html" class="lookbook">LOOKBOOK</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                </li>
+            </ul>
             <div class="logoblk">
-                <a href="" class="logo"></a>
+                <a href="./index.html" class="logo"></a>
                 <ul class="icon_list">
                     <li>
                         <div class="search_blk"><input type="text" class="search_input">
@@ -73,26 +109,16 @@
         </ul>
     </div>
     <div class="table">
-        <input type="radio" id="square1" name="square" checked>
-        <label for="square1"><i class="fas fa-square fa-2x"></i></label>
-        <input type="radio" id="square2" name="square">
-        <label for="square2"><i class="fas fa-th-large fa-2x"></i></label>
-        <input type="radio" id="square3" name="square">
-        <label for="square3"><i class="fas fa-th fa-2x"></i></label>
+        <input type="radio" id="grid12" name="square" class="table_list" checked>
+        <label for="grid12"><i class="fas fa-square fa-2x"></i></label>
+        <input type="radio" id="grid16" name="square" class="table_list">
+        <label for="grid16"><i class="fas fa-th-large fa-2x"></i></label>
+        <input type="radio" id="grid24" name="square" class="table_list">
+        <label for="grid24"><i class="fas fa-th fa-2x"></i></label>
 
     </div>
     <div class="container">
         <div class="navbar">
-            <div class="malecheck">
-                <div>
-                    <input type="radio" name="male" id="men">
-                    <label for="men">MEN</label>
-                </div>
-                <div>
-                    <input type="radio" name="male" id="women">
-                    <label for="women">WOMEN</label>
-                </div>
-            </div>
             <div class="select">
                 <p class="title">CATEGORY</p>
                 <span class="line"></span>
@@ -129,16 +155,16 @@
                     <p class="title">BRANDS</p>
                     <span class="line"></span>
                     <ul>
-                        <li><a href="../html/visvim.html">VISVIM</a></li>
-                        <li><a href="../html/visvim.html">KUON</a></li>
-                        <li><a href="../html/visvim.html">KAPITAL</a></li>
-                        <li><a href="../html/visvim.html">Blue Blue Japan</a></li>
+                        <li><a href="../html/brands.html">VISVIM</a></li>
+                        <li><a href="../html/brands.html">KUON</a></li>
+                        <li><a href="../html/brands.html">KAPITAL</a></li>
+                        <li><a href="../html/brands.html">Blue Blue Japan</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="product_blk">
-            <div class="prd_items">
+            <div class="prd_items12 -on">
                 <div class="product_card"><a href="../html/cart.html">
                         <img src="../images/index/prd_index/01_010_2_1024x1024@2x.jpeg" alt="">
                         <p><span class="prd_date">2021/08/18</span></p>
@@ -204,16 +230,245 @@
                                 Patch (Indigo/Bleached)</span></p>
                     </a></div>
             </div>
+            <div class="prd_items16">
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/01_010_2_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/18</span></p>
+                        <p><span class="prd_name">Wrinkled T-Shirt w/BORO -Trim</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/01_027_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/16</span></p>
+                        <p><span class="prd_name">Regular Collar Shirt-CROSS SASHIKO-</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/03_004_110x110@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/14</span></p>
+                        <p><span class="prd_name">CROSS SASHIKO Cargo Pocket T-shirt</span></p>
+                    </a></div>
+                <div class="product_card"><a href="#">
+                        <img src="../images/index/prd_index/177_ac76b00a-baa2-47bd-bc5e-5535fb46e61e_1024x1024@2x.jpeg"
+                            alt="">
+                        <p><span class="prd_date">2021/08/12</span></p>
+                        <p><span class="prd_name">PLASTIC PAPER Pocket Band Collar Shirt</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/141GD033800_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/07</span></p>
+                        <p><span class="prd_name">CREW SOCKS-CROSS SASHIKO-</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2001-JK01_A01_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/05</span></p>
+                        <p><span class="prd_name">SASHIKO TATTERSALL Harrington Jacket</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/200507_225_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/01</span></p>
+                        <p><span class="prd_name">VINTAGE BORO Blazer (#A/Large)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/51dc731b-16a0-4f7e-823e-e282b9dd12a6_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/28</span></p>
+                        <p><span class="prd_name">YOSHINO PLAID Easy Shorts-</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/EFB11EE5-C750-46C2-AB15-44BFC4E540A6_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/23</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] Baseball Cap "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/A4E866F6-0F2E-4D31-90F0-3B84506D901F_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/20</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] &nbsp; Face Mask "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0101_A_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/16</span></p>
+                        <p><span class="prd_name">SALT SHRUNK NYLON Track
+                                Pants w/BORO Side Stripe</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+            </div>
+            <div class="prd_items24">
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/01_010_2_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/18</span></p>
+                        <p><span class="prd_name">Wrinkled T-Shirt w/BORO -Trim</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/01_027_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/16</span></p>
+                        <p><span class="prd_name">Regular Collar Shirt-CROSS SASHIKO-</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/03_004_110x110@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/14</span></p>
+                        <p><span class="prd_name">CROSS SASHIKO Cargo Pocket T-shirt</span></p>
+                    </a></div>
+                <div class="product_card"><a href="#">
+                        <img src="../images/index/prd_index/177_ac76b00a-baa2-47bd-bc5e-5535fb46e61e_1024x1024@2x.jpeg"
+                            alt="">
+                        <p><span class="prd_date">2021/08/12</span></p>
+                        <p><span class="prd_name">PLASTIC PAPER Pocket Band Collar Shirt</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/141GD033800_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/07</span></p>
+                        <p><span class="prd_name">CREW SOCKS-CROSS SASHIKO-</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2001-JK01_A01_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/05</span></p>
+                        <p><span class="prd_name">SASHIKO TATTERSALL Harrington Jacket</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/200507_225_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/08/01</span></p>
+                        <p><span class="prd_name">VINTAGE BORO Blazer (#A/Large)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/51dc731b-16a0-4f7e-823e-e282b9dd12a6_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/28</span></p>
+                        <p><span class="prd_name">YOSHINO PLAID Easy Shorts-</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/EFB11EE5-C750-46C2-AB15-44BFC4E540A6_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/23</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] Baseball Cap "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/A4E866F6-0F2E-4D31-90F0-3B84506D901F_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/20</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] &nbsp; Face Mask "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0101_A_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/16</span></p>
+                        <p><span class="prd_name">SALT SHRUNK NYLON Track
+                                Pants w/BORO Side Stripe</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/EFB11EE5-C750-46C2-AB15-44BFC4E540A6_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/23</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] Baseball Cap "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/A4E866F6-0F2E-4D31-90F0-3B84506D901F_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/20</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] &nbsp; Face Mask "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0101_A_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/16</span></p>
+                        <p><span class="prd_name">SALT SHRUNK NYLON Track
+                                Pants w/BORO Side Stripe</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/EFB11EE5-C750-46C2-AB15-44BFC4E540A6_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/23</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] Baseball Cap "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/A4E866F6-0F2E-4D31-90F0-3B84506D901F_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/20</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] &nbsp; Face Mask "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0101_A_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/16</span></p>
+                        <p><span class="prd_name">SALT SHRUNK NYLON Track
+                                Pants w/BORO Side Stripe</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/EFB11EE5-C750-46C2-AB15-44BFC4E540A6_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/23</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] Baseball Cap "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/A4E866F6-0F2E-4D31-90F0-3B84506D901F_540x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/20</span></p>
+                        <p><span class="prd_name">[x TAGS WKGPTY] &nbsp; Face Mask "WOVEN SONG"</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0101_A_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/16</span></p>
+                        <p><span class="prd_name">SALT SHRUNK NYLON Track
+                                Pants w/BORO Side Stripe</span></p>
+                    </a></div>
+                <div class="product_card"><a href="../html/cart.html">
+                        <img src="../images/index/prd_index/2002-PT0505_A_1-min_1024x1024@2x.jpeg" alt="">
+                        <p><span class="prd_date">2021/07/09</span></p>
+                        <p><span class="prd_name">DENIM Slim Pants
+                                w/SAKIORI
+                                Patch (Indigo/Bleached)</span></p>
+                    </a></div>
+            </div>
         </div>
     </div>
     <div class="pagination">
         <ul class="pagination_list">
             <li class="prev">&lt;</li>
-            <li class="pageNumber focus">1</li>
-            <li class="pageNumber">2</li>
-            <li class="pageNumber">3</li>
-            <li class="pageNumber">4</li>
-            <li class="pageNumber">5</li>
+            <li class="pageNumber one focus">1</li>
+            <li class="pageNumber two">2</li>
+            <li class="pageNumber three">3</li>
+            <li class="pageNumber four">4</li>
+            <li class="pageNumber five">5</li>
             <li class="next">&gt;</li>
         </ul>
     </div>
@@ -223,7 +478,7 @@
                 <li><a href="../html/info.html">About US</a></li>
                 <li><a href="../html/info.html">Stockies</a></li>
                 <li><a href="../html/info.html">Shipping & Returns</a></li>
-                <li><a href="../html/info.html">Turns & Conditions</a></li>
+                <li><a href="../html/info.html">Terms & Conditions</a></li>
                 <li><a href="../html/info.html">Privacy Policy</a></li>
             </ul>
         </div>
@@ -245,6 +500,78 @@
     <script type="text/javascript"></script>
     <script src="../js/btn_totop.js"></script>
     <script src="../js/pagination.js"></script>
+
+    <!-- ***************************************tablefuntion******************************** -->
+
+
+    <script>
+        function myFunction() {
+            let prd_items12 = document.getElementsByClassName("prd_items12")[0];
+            let prd_items16 = document.getElementsByClassName("prd_items16")[0];
+            let prd_items24 = document.getElementsByClassName("prd_items24")[0];
+            let grid12 = document.getElementById("grid12");
+            let grid16 = document.getElementById("grid16");
+            let grid24 = document.getElementById("grid24");
+            if (window.innerWidth < 1130) {
+                prd_items12.classList.add("-on");
+                prd_items16.classList.remove("-on");
+                prd_items24.classList.remove("-on");
+            }
+        }
+
+        window.addEventListener("resize", myFunction);
+
+
+        // $(window).resize(function () {
+        //     console.log(window.innerWidth)
+        //     if (window.innerWidth < 1250) {
+        //         console.log($("grid12"));
+        //         // $(grid12).addClass("-on");
+        //         // $('.prd_item16').removeClass("-on");
+        //     }
+        // });
+
+        document.addEventListener("click", function (e) {
+            if (e.target.classList.contains("table_list")) {
+
+                let prd_items12 = document.getElementsByClassName("prd_items12")[0];
+                let prd_items16 = document.getElementsByClassName("prd_items16")[0];
+                let prd_items24 = document.getElementsByClassName("prd_items24")[0];
+
+
+                let grid12 = document.getElementById("grid12");
+                let grid16 = document.getElementById("grid16");
+                let grid24 = document.getElementById("grid24");
+                let prd_items = document.getElementsByClassName("prd_items")[0];
+
+                if (grid12.checked) {
+                    prd_items12.classList.add("-on");
+                } else {
+                    prd_items12.classList.remove("-on");
+                }
+
+                if (grid16.checked) {
+                    prd_items16.classList.add("-on");
+                } else {
+                    prd_items16.classList.remove("-on");
+                }
+                if (grid24.checked) {
+                    prd_items24.classList.add("-on");
+                } else {
+                    prd_items24.classList.remove("-on");
+                }
+            }
+        });
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loading-wrapper").fadeOut(800);
+            }, 100)
+        });
+
+    </script>
+
+
+
 </body>
 
 </html>

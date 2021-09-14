@@ -12,7 +12,7 @@ btn_totop.addEventListener('click', function () {
 })
 window.addEventListener('scroll', function () {
     if (document.documentElement.scrollTop > 0) {
-        btn_totop.style.right = 30 + "px";
+        btn_totop.style.right = 10 + "px";
     } else {
         btn_totop.style.right = -55 + "px"
     }

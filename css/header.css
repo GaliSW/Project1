@@ -457,7 +457,7 @@ body::before{
         width: 100%;
         height: 100%;
         z-index: 1;
-        background: rgba(26,55,96,.5);
+        background:linear-gradient(117deg, rgba(14, 23, 43, .8) 0%, rgba(26, 55, 96, .8) 53%, rgba(14, 23, 43, .8) 100%);
     }
     .menu{
         position: absolute;

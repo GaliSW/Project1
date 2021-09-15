@@ -128,9 +128,9 @@
     </div>
     <div class="vd_container">
         <iframe
-            src="https://www.youtube.com/embed/amHfWAF054A?rel=0&controls=0&loop=1&autoplay=1&mute=1&playlist=amHfWAF054A"
+            src="https://www.youtube.com/embed/amHfWAF054A?rel=0&controls=0&loop=1&autoplay=true&mute=1&playlist=amHfWAF054A"
             title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
         <div class="vd_para">
             <h1>SEASON MOVIE</h1>
             <h2>KUON EARLY SUMMER 2021 COLLECTION</h2>
@@ -307,6 +307,7 @@
         // =================================================cookie========
 
 
+
         function parseCookie() {
             var cookieObj = {};
             var cookieAry = document.cookie.split(';');
@@ -333,7 +334,7 @@
                 let loading_wrapper = document.getElementById("loading_wrapper");
                 loading_wrapper.classList.add("-on");
             }
-            document.cookie = "visible = true; max-age = 2000";
+            document.cookie = "visible = true; max-age = 1800";
         });
 
 

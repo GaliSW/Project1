@@ -339,11 +339,9 @@
         width: 200px;
     }
 }
-@media (max-width:575.98px){
+@media (max-width:413.98px){
     .prd_items12 .product_card{
         width: 160px;
-        /* height: 800px; */
-
     }
     .prd_items12 .product_card img{
         width: 160px;

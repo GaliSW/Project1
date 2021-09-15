@@ -112,6 +112,11 @@
 {
     content: '←';
 }
+@media (max-width:991.98px){
+    .slider-single button{
+        display: none;
+    }
+}
 
 /* Dots */
 .slick-dotted.slick-slider

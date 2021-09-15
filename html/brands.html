@@ -128,11 +128,15 @@
                 </div>
                 <div class="brands_para">
                     <p>Visvim is one of the most coveted labels on the market, defined by the encompassing philosophy of
-                        philosopher, traveller, and designer, Hiroki Nakamura. The Japanese label has grown and evolved
-                        with great distinction over the past decade and under the watch of this visionary, it will
-                        forever continue to capture attention. Nakamura is on a mission to create the best garment and
-                        product possible where no detail is compromised and every product is created with authenticity,
-                        quality and comfort in mind; not in replicating traditional quality but exceeding it.</p>
+                        philosopher, traveller, and designer, Hiroki Nakamura.<span class="brand-none"> The Japanese
+                            label has grown and evolved
+                            with great distinction over the past decade and under the watch of this visionary, it will
+                            forever continue to capture attention. Nakamura is on a mission to create the best garment
+                            and
+                            product possible where no detail is compromised and every product is created with
+                            authenticity,
+                            quality and comfort in mind; not in replicating traditional quality but exceeding it.</span>
+                    </p>
                 </div>
             </div>
             <div class="brands_people">
@@ -260,6 +264,20 @@
     <script src="../js/pagination.js"></script>
     <script src="../js/blur.js"></script>
     <script>
+        $(window).ready(function () {
+            if (window.innerWidth < 575.98) {
+                $('.brand-none').css('display', 'none');
+            } else {
+                $('.brand-none').css('display', 'block');
+            }
+        })
+        $(window).resize(function () {
+            if (window.innerWidth < 575.98) {
+                $('.brand-none').css('display', 'none');
+            } else {
+                $('.brand-none').css('display', 'block');
+            }
+        });
         $(document).ready(function () {
             setTimeout(function () {
                 $(".loading-wrapper").fadeOut(800);

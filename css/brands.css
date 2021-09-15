@@ -276,6 +276,9 @@
     }
 }
 @media (max-width:575.98px){
+    .brands_story{
+        margin-bottom: 30px;
+    }
     .brands_story div,.brands_people div{
         width: 200px;
     }
@@ -283,10 +286,9 @@
         width: 200px;
     }  
     .brands_para{
-        border-right: 1px dotted #D3E0E8;
-        height: 200px;
-        overflow: hidden;
-        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        /* border-right: 1px dotted #D3E0E8; */
         padding: 5px;
     } 
     .brands_people_para h1{
@@ -305,6 +307,7 @@
     }  
     .brands_para{
         height: 160px;
+        font-size: 1.2rem;
     }
     .brands_people_para h1{
         font-size: 1.6rem;

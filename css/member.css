@@ -179,15 +179,18 @@
 @media (max-width:767.98px){
     .sign_label label{
         width: 280px;
-
     } 
     .custom_blk , .custom>form {
         width: 560px;
+    }
+    .signin_blk, .signup_blk{
+        padding-top: 10px;
     }
 }
 @media (max-width:575.98px){
     .sign_label label{
         width: 180px;
+        font-size:1.4rem;
 
     } 
     .custom_blk , .custom>form {
@@ -202,6 +205,7 @@
         width: 350px;
     }
     .mail{
+        margin: 0;
         text-decoration: none;
         color: #010615;
         font-size: 1.6rem;

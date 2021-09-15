@@ -283,11 +283,12 @@
         width: 200px;
     }  
     .brands_para{
+        border-right: 1px dotted #D3E0E8;
         height: 200px;
         overflow: hidden;
         overflow-y: auto;
-        padding: 0;
-    }
+        padding: 5px;
+    } 
 }
 @media (max-width:413.98px){
     .brands_story div,.brands_people div{
@@ -298,9 +299,6 @@
     }  
     .brands_para{
         height: 160px;
-        overflow: hidden;
-        overflow-y: auto;
-        padding: 0;
     }
     .brands_people_para h1{
         font-size: 1.6rem;
